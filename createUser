@@ -1,0 +1,12 @@
+Use Master
+GO
+
+CREATE LOGIN myuser with PASSWORD='somepassword'
+GO
+
+create user myuser for login myuser
+go
+
+use yourdatabase
+create user myuser for login myuser
+alter role [db_owner] add member myuser
