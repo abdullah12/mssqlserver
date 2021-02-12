@@ -1,0 +1,6 @@
+create database yourDB
+USE master;
+GO
+ALTER DATABASE yourDB
+COLLATE Arabic_CI_AI;
+GO
